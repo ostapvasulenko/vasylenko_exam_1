@@ -1,42 +1,40 @@
-.header{
+.header {
     display: flex;
     align-items: center;
     height: 70px;
-    
-    &__logo{
+
+    &__logo {
         font-size: 24px;
-    font-weight: 700;
-    margin-left: 25px;
+        font-weight: 700;
+        margin-left: 35px;
     }
 
-    ul{
-        li{
-            a{
-              text-decoration: none;
-              color: #000;
-              font-size: 18px;
+    ul {
+        li {
+            a {
+                text-decoration: none;
+                color: #000;
+                font-size: 18px;
             }
-            
+
         }
-        :nth-child(even){
+
+        :nth-child(even) {
             margin: 0px 40px;
         }
-        :first-child{
+
+        :first-child {
             margin-left: 10px;
         }
     }
-    &__icons{
-        ul{
-            list-style: none;
-            li{
-                a{
-                    text-decoration: none;
-                }
-            }
-            :nth-child(even){
-                width: 50px;
-                height: 50px;
-            }
+
+    &__icons {
+        margin-right: 30px;
+
+        &_icon {
+            width: 20px;
+            height: 20px;
+            margin: 0px 25px;
         }
     }
 }
