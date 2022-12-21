@@ -37,4 +37,19 @@
             margin: 0px 25px;
         }
     }
+
+    @media screen and(max-width: 1400px) {
+        &__logo {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        &__icons {
+            margin-right: 10px;
+        }
+    }
+    @media screen and(max-width: 1200px) {
+        &__logo {
+            font-size: 16px;
+        }
+    }
 }
