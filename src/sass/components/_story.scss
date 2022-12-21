@@ -35,7 +35,7 @@
 
         &_text {
             margin-top: 30px;
-            font-size: 18px;
+            font-size: 19px;
         }
 
         &_button {
@@ -59,6 +59,10 @@
     @media screen and(max-width:1400px) {
         &__info {
             padding: 0px 50px;
+
+            &_text{
+                font-size: 18px;
+            }
         }
     }
     @media screen and(max-width:1200px) {

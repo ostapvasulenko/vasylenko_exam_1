@@ -10,7 +10,7 @@
     }
 
     &__info {
-        padding: 0px 80px;
+        padding: 0px 95px;
 
         &_title {
             font-size: 48px;
@@ -19,16 +19,18 @@
         }
 
         &_text {
-            font-size: 20px;
+            font-size: 21px;
             color: #000;
             margin-top: 30px;
+            text-align: justify;
 
         }
 
         &_textlast {
-            font-size: 18px;
+            font-size: 17px;
             color: #000;
             margin-top: 24px;
+            text-align: justify;
 
         }
 
@@ -53,26 +55,48 @@
 
     @media screen and(max-width: 1400px) {
         &__info {
-            
-             padding: 0px 50px; 
+
+            padding: 0px 50px;
+
             &_text {
-                font-size: 20px;
+                font-size: 21px;
             }
-            &_textlast{
-                font-size: 16px;
+
+            &_textlast {
+                font-size: 17px;
             }
         }
     }
+
     @media screen and(max-width: 1200px) {
         &__info {
 
             &_text {
-                font-size: 16px;
+                font-size: 17px;
             }
-            &_textlast{
+
+            &_textlast {
                 font-size: 14px;
             }
         }
     }
-    
+
+    @media screen and(max-width: 991px) {
+        &__info {
+            padding: 0px 25px;
+
+            &_title {
+                font-size: 38px;
+            }
+
+            &_text {
+                font-size: 17px;
+            }
+
+            &_textlast {
+                font-size: 18px;
+            }
+        }
+    }
+
 }
