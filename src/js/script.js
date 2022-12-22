@@ -8,3 +8,8 @@ let slider = $(document).ready(function () {
   });
 });
 
+$(document).ready(function() {
+  $('.menu__icon').click(function(){
+    $('body').toggleClass('menu_shown');
+  });
+});
