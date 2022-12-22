@@ -43,34 +43,140 @@
             font-size: 20px;
             margin-left: 20px;
         }
+
         &__icons {
             margin-right: 10px;
         }
     }
+
     @media screen and(max-width: 1200px) {
         &__logo {
             font-size: 16px;
         }
     }
+
     @media screen and(max-width: 991px) {
-        &__icons{
-            &_icon{
+        &__icons {
+            &_icon {
                 display: none;
             }
         }
+
         &__logo {
             font-size: 24px;
         }
-        &__menu{
+
+        &__menu {
             margin-left: -20px;
         }
     }
-    @media screen and(max-width: 767px){
+
+    @media screen and(max-width: 767px) {
         ul {
-            li{
+            li {
                 display: none;
             }
         }
-        
+
+    }
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 21px;
+    right: 32px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-btn>span,
+.menu-btn>span::before,
+.menu-btn>span::after {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    transition-duration: .25s;
+}
+
+.menu-btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu-btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menubox {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 40px 0;
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    padding: 12px 24px;
+    color: #0aca40;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu-item:hover {
+    background-color: #CFD8DC;
+}
+
+
+#menu-toggle {
+    opacity: 0;
+}
+
+#menu-toggle:checked~.menu-btn>span {
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked~.menu-btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu-toggle:checked~.menu-btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu-toggle:checked~.menubox {
+    visibility: visible;
+    left: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+    .menu-btn>span,
+    .menu-btn>span::before,
+    .menu-btn>span::after {
+        display: block;
+    }
+    .menubox{
+        display: block;
     }
 }
