@@ -45,6 +45,32 @@
         &__radio {
             margin-left: -55px;
         }
+        &__form{
+            height: 150px;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &__radio {
+            margin-left: -55px;
+        }
+        &__form{
+            height: 120px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &__title{
+            margin-bottom: 30px;
+        }
+        &__radio {
+            margin-left: -20px;
+        }
+        .container{
+            padding: 0px 60px;
+        }
+        .form-check-input {
+            margin-left: 50px;
+            margin-right: 5px;
+        }
     }
 }
 
@@ -60,6 +86,15 @@
 }
 
 .form-check-label {
-    margin: 0px 0px;
     font-size: 20px;
+}
+@media screen and (max-width: 991px) {
+    .form-check-input {
+        margin-left: 18px;
+        margin-right: 5px;
+    }
+    .form-check-label {
+        font-size: 17px;
+        margin-top: 3px;
+    }
 }
