@@ -112,6 +112,15 @@
         #position div:nth-of-type(2){
             order: -1;
         }
+        &__info {
+            padding: 0px 50px;
+            &_title {
+                margin-top: 40px;
+            }
+            &_button {
+                margin-bottom: 40px;
+            }
+        }
     }
 
 }
