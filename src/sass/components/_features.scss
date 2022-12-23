@@ -1,5 +1,7 @@
 .features {
-
+    .container{
+        padding: 0px 50px;
+    }
     &__line{
         border: 1px solid rgb(165, 165, 165);
         &_line{
@@ -27,13 +29,17 @@
             font-size: 18px;
         }
     }
-    table{
+    #{
         width: 100%;
-        border-color: white;
+        border-top: 4px solid white;
+        border-bottom: 4px solid white;
+        border-left: 4px solid white;
+    
     }
-    table, th, td {
-        border: 1px solid black;
+    th, td {
+        border: 2px solid rgb(165, 165, 165);
         border-collapse: collapse;
+        height: 250px;
       }
     
 }
