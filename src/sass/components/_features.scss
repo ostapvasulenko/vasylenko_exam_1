@@ -1,9 +1,28 @@
-.features{
+.features {
 
-    &__title{
+    &__line{
+        border: 1px solid rgb(165, 165, 165);
+    }
+
+    &__title {
         font-size: 36px;
         font-weight: 500;
         margin-top: 70px;
         text-align: center;
     }
+    &__block{
+        text-align: center;
+        padding: 60px 45px;
+        &_title{
+            font-size: 22px;
+            font-weight: 600;
+            margin: 20px 0px;
+        }
+        &_text{
+            font-size: 18px;
+        }
+    }
+    
 }
+
+
