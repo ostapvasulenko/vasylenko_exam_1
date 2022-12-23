@@ -2,6 +2,11 @@
 
     &__line{
         border: 1px solid rgb(165, 165, 165);
+        &_line{
+            border: 1px solid rgb(165, 165, 165);
+            transform: rotate(90deg);
+            height: 20px;
+        }
     }
 
     &__title {
