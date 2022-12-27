@@ -8,7 +8,11 @@
         margin-top: 70px;
         text-align: center;
     }
-    .grid-container {
+    &__line{
+        border: 1px solid rgb(165, 165, 165);
+        display: none;
+    }
+    &__items {
         display: grid;
         grid-template-columns: auto auto auto;
         padding: 10px;
@@ -19,8 +23,8 @@
         @media screen and(max-width:768px){
             grid-template-columns: auto;
         }
-        .grid-item {
-            padding: 40px 60px;
+        &_item {
+            padding: 40px 55px;
             text-align: center;
             font-size: 12px;
             h4{
@@ -34,11 +38,11 @@
         }
 
         .one, .four, .two, .five{
-            border-right: 1px solid rgb(165, 165, 165);
+            border-right: 2px solid rgb(165, 165, 165);
         }
 
         .one, .two, .three{
-            border-bottom: 1px solid rgb(165, 165, 165);
+            border-bottom: 2px solid rgb(165, 165, 165);
         }
 
         .two, .four{
@@ -49,13 +53,13 @@
 
         .three, .four{
             @media screen and(max-width:992px){
-                border-bottom: 1px solid rgb(165, 165, 165);
+                border-bottom: 2px solid rgb(165, 165, 165);
             }
         }
 
         .three{
             @media screen and(max-width:992px){
-                border-right: 1px solid rgb(165, 165, 165);
+                border-right: 2px solid rgb(165, 165, 165);
             }
         }
 
@@ -64,6 +68,11 @@
                 border-right: none;
             }
         }
+    }
+    @media screen and(max-width:768px) {
+        &__line{
+            display: block;
+        } 
     }
 }
 

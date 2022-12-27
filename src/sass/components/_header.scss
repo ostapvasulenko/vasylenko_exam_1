@@ -12,10 +12,16 @@
     ul {
         li {
             list-style: none;
+            
             a {
                 text-decoration: none;
                 color: #000;
                 font-size: 18px;
+                transition: 0.5s all;
+            }
+            :hover{
+                color: rgb(165, 165, 165);
+                transition: 0.2s all;
             }
 
         }
@@ -152,7 +158,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 1000%;
     text-align: center;
     padding-top: 50px;
     background: #ffffff;

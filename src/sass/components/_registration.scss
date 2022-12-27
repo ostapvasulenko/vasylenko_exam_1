@@ -36,6 +36,13 @@
         border-radius: 6px;
         font-size: 14px;
         font-family: 'ROBOTO', sans-serif;
+        transition: 0.5s all;        
+
+        &:hover{
+            background-color: rgb(165, 165, 165);
+            transition: 0.5s all;
+            color: #000;
+        }
     }
     @media screen and (max-width: 1399px) {
         &__radio {
@@ -67,7 +74,6 @@
         }
         &__radio {
             margin-left: -50px;
-            margin-top: 15px;
         }
         .container{
             padding: 0px 60px;
@@ -84,6 +90,9 @@
         }
     }
     @media screen and (max-width: 471px) {
+        &__title{
+            margin-top: 30px;
+        }
         .form-check-label {
             font-size: 17px;
         }

@@ -48,7 +48,15 @@
             margin-top: 30px;
             font-size: 14px;
             font-family: 'ROBOTO', sans-serif;
+            transition: 0.5s all;
+
+            &:hover{
+                background-color: rgb(165, 165, 165);
+                transition: 0.5s all;
+                color: #000;
+            }
         }
+         
     }
 
     #position {
