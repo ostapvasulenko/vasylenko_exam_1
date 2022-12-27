@@ -44,6 +44,9 @@
             color: #000;
         }
     }
+
+    
+
     @media screen and (max-width: 1399px) {
         &__radio {
             margin-left: -100px;
@@ -109,7 +112,11 @@
     }
     
 }
-
+input{
+    outline: none;
+    border: 1px solid black;
+  border-radius: 5px;
+}
 .form-label {
     font-size: 20px;
     font-weight: 700;

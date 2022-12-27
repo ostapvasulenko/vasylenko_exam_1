@@ -23,6 +23,7 @@
         @media screen and(max-width:768px){
             grid-template-columns: auto;
         }
+        
         &_item {
             padding: 40px 55px;
             text-align: center;
@@ -73,6 +74,9 @@
         &__line{
             display: block;
         } 
+        &__items {
+            margin-top: 20px;
+        }
     }
 }
 
