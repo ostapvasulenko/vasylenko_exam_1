@@ -45,13 +45,13 @@
             font-family: 'ROBOTO', sans-serif;
             transition: 0.5s all;
 
-            &:hover{
+            &:hover {
                 background-color: rgb(165, 165, 165);
                 transition: 0.5s all;
                 color: #000;
             }
-        } 
-        
+        }
+
     }
 
     &__img {
@@ -107,23 +107,27 @@
             &_textlast {
                 font-size: 18px;
             }
+
             &_button {
                 padding: 15px 20px;
             }
         }
-        
+
     }
 
     @media screen and(max-width: 767px) {
-         
-        #position div:nth-of-type(2){
+
+        #position div:nth-of-type(2) {
             order: -1;
         }
+
         &__info {
             padding: 0px 50px;
+
             &_title {
                 margin-top: 40px;
             }
+
             &_button {
                 margin-bottom: 40px;
             }

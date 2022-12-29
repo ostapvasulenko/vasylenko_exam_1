@@ -9,39 +9,49 @@
         font-weight: 500;
         margin-top: 50px;
     }
-    &__template{
+
+    &__block {
         position: relative;
         z-index: 10;
-        .gallery__slider{
+
+        .gallery__slider {
             cursor: pointer;
-            
-            }
-            .img-slider{
-                img{
-                    width: 100%;
-                    height: 250px;
-                    margin-top: 50px;
-                }
-            }
-            .slick-arrow{
-                position: absolute;
-                background: url('../img/stroke.png') 0 0 / 100% no-repeat;
-                transform: rotate(0deg);
-                width: 30px;
-                height: 55px;
-               
-                font-size: 0;
-                border: none;
-                top: 165px;
-                z-index: 1;
-               
-                &.slick-next{
-                   top: 135px;
-                   right: 0;
-                   background: url('../img/stroke.png') 0 0 / 100% no-repeat;
-                   transform: rotate(180deg);
-                }
-               }
         }
-    
+
+        .img-slider {
+            position: relative;
+
+            img {
+                position: relative;
+                width: 100%;
+                height: 250px;
+                margin-top: 50px;
+            }
+
+            :hover {
+                filter: brightness(40%);
+            }
+        }
+
+        .slick-arrow {
+            position: absolute;
+            background: url('../img/stroke.png') 0 0 / 100% no-repeat;
+            transform: rotate(0deg);
+            width: 30px;
+            height: 55px;
+
+            font-size: 0;
+            border: none;
+            top: 160px;
+            z-index: 1;
+
+            &.slick-next {
+                top: 135px;
+                right: 0;
+                background: url('../img/stroke.png') 0 0 / 100% no-repeat;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
 }

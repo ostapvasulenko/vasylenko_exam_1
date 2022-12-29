@@ -50,13 +50,13 @@
             font-family: 'ROBOTO', sans-serif;
             transition: 0.5s all;
 
-            &:hover{
+            &:hover {
                 background-color: rgb(165, 165, 165);
                 transition: 0.5s all;
                 color: #000;
             }
         }
-         
+
     }
 
     #position {
@@ -64,13 +64,15 @@
         align-items: center;
         flex-direction: row;
     }
-    #size{
+
+    #size {
         order: 1;
     }
-    #size_next{
+
+    #size_next {
         order: 2;
     }
-    
+
 
 
     @media screen and(max-width:1400px) {
@@ -118,19 +120,23 @@
             &_title {
                 margin-top: 40px;
             }
+
             &_button {
                 margin-bottom: 60px;
             }
         }
-        #size{
+
+        #size {
             order: 2;
         }
-        #size_next{
+
+        #size_next {
             order: 1;
-        } 
-        &__last_img{
+        }
+
+        &__last_img {
             margin-top: -20px;
         }
-        
+
     }
 }

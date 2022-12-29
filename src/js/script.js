@@ -7,28 +7,23 @@ let slider = $(document).ready(function () {
     infinite: true,
     responsive: [
       {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3,
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
       }
-    }, 
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2,
-      }
-    }, {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-      }
-    }
     ]
   });
 });
 
-$(document).ready(function() {
-  $('.menu__icon').click(function(){
+$(document).ready(function () {
+  $('.menu__icon').click(function () {
     $('body').toggleClass('menu_shown');
   });
 });
