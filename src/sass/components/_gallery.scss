@@ -26,7 +26,7 @@
                 width: 100%;
                 height: 250px;
                 margin-top: 50px;
-                margin-left: -350px;
+                margin-left: -325px;
             }
 
             :hover {
@@ -48,7 +48,7 @@
 
             &.slick-next {
                 top: 135px;
-                right: 25px;
+                right: 0px;
                 background: url('../img/stroke.png') 0 0 / 100% no-repeat;
                 transform: rotate(180deg);
             }
